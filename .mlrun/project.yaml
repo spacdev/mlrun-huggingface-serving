@@ -1,0 +1,10 @@
+name: mlrun-huggingface-serving
+description: HuggingFace Serving Using MLRun
+functions:
+  - name: mlrun-huggingface-serving
+    kind: serving
+    image: mlrun/mlrun
+    handler: handler
+    with_repo: true
+    file: src/serve.py
+workflows: []
